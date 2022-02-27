@@ -1,4 +1,51 @@
 *{
     background: rgb(4,97,41);
-background: linear-gradient(270deg, rgba(4,97,41,1) 0%, rgba(74,141,101,1) 55%, rgba(254,254,254,1) 100%);  
+background: linear-gradient(270deg, rgb(120, 148, 131) 0%, rgb(118, 158, 134) 55%, rgb(120, 148, 131) 0%, rgb(154, 206, 175) 100%);  
 }
+
+.example{}
+
+.example::before{
+    content: "";
+    background: darkgreen;
+    background: rgba(4, 97, 41, 0.747);
+
+}
+
+
+/* a section  ------------------------------------  */
+/* example =========================================== */
+/* .example{
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    background: var(--color-bg-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (min-width: 413px){}
+
+@media screen and (min-width: 549px){}
+
+@media screen and (min-width: 576px){}
+
+@media screen and (min-width: 768px){}
+
+@media screen and (min-width: 992px){}
+
+@media screen and (min-width: 1200px){}
+
+@media screen and (min-width: 1400px) {}
+
+/* Alternative code, for larger screens */
+/* @media screen and (min-width: 1700px){
+
+    section{
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+};  */
+
