@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { GlobalStyles } from "./globalStyle/GlobalStyles";
 import Hero from "./components/hero/Hero";
+import { GlobalStyles } from "./globalStyle/GlobalStyles";
 
 const ScApp = styled.div`
     display: flex;

@@ -127,6 +127,53 @@ body.dark-theme{
 --color-bg-dark-text: #1d1d1d;
 }
 
-
-
 `;
+
+// Create media queries
+export const mobile = (props) => {
+    return css`
+        @media (min-width: 420px) {
+            ${props}
+        }
+    `;
+};
+
+export const mobileMd = (props) => {
+    return css`
+        @media (min-width: 576px) {
+            ${props}
+        }
+    `;
+};
+
+export const tablet = (props) => {
+    return css`
+        @media (min-width: 768px) {
+            ${props}
+        }
+    `;
+};
+
+export const tabletMd = (props) => {
+    return css`
+        @media (min-width: 992px) {
+            ${props}
+        }
+    `;
+};
+
+export const laptop = (props) => {
+    return css`
+        @media (min-width: 1200px) {
+            ${props}
+        }
+    `;
+};
+
+export const laptopMd = (props) => {
+    return css`
+        @media (min-width: 1400px) {
+            ${props}
+        }
+    `;
+};
