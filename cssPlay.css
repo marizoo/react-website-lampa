@@ -3,14 +3,30 @@
 background: linear-gradient(270deg, rgb(120, 148, 131) 0%, rgb(118, 158, 134) 55%, rgb(120, 148, 131) 0%, rgb(154, 206, 175) 100%);  
 }
 
-.example{}
-
-.example::before{
-    content: "";
-    background: darkgreen;
-    background: rgba(4, 97, 41, 0.747);
-
+.light-theme{
+    /* ----- Colors ------ */
+    --color-brand: #adbeb0;
+    --color-brand-dark: #92a094;
+    --color-white: #fff;
+    --color-black: #000;
 }
+
+.light{
+--color-text-1: #202020;
+--color-text-2: #2e2d2d;
+--color-bg-1: #f1f1f1;
+--color-bg-2: #ebebeb;
+--color-bg-dark: #1d1d1d;
+--color-bg-dark-text: #f7f7f7;
+}
+.dark{
+--color-text-1: #f1f1f1;
+--color-text-2: #ebebeb;
+--color-bg-1: #202020;
+--color-bg-2: #2e2d2d;
+--color-bg-dark: #f7f7f7;
+--color-bg-dark-text: #1d1d1d;
+    }
 
 
 /* a section  ------------------------------------  */

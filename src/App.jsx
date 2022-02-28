@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-// import Hero from "./components/hero/Hero";
+import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import { GlobalStyles } from "./globalStyle/GlobalStyles";
 import Hamburger1 from "./UI/Hamburger1";
@@ -29,9 +29,9 @@ const App = () => {
                     toggleMenu={toggleMenu}
                     setToggleMenu={setToggleMenu}
                 />
-                <Navbar />
+                <Navbar toggleMenu={toggleMenu} />
 
-                {/* <Hero /> */}
+                <Hero />
             </ScApp>
         </>
     );

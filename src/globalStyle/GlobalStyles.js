@@ -61,26 +61,37 @@ ul {
 
 .light-theme{
 /* ----- Colors ------ */
---color-brand: #e29301;
---color-brand-dark: #b87803;
---color-brand1: #069c5480;
+--color-brand-alt: lightblue;
+--color-brand: #adbeb0;
+--color-brand-dark: #92a094;
 --color-white: #fff;
---color-text-light: #A6A6A6;
+--color-black: #000;
+--color-gray: gray;
+--color-gray-light: lightgray;
 /*  the colors below have a dark themed version: refer to: REF: A001 (line +- 55  ) */
---color-title: #393939;
---color-text: #707070;
---color-bg-1: #f8f8f8;
---color-bg-2: #f0efef;
+--color-text-1: #202020;
+--color-text-2: #2e2d2d;
+--color-bg-1: #f1f1f1;
+--color-bg-2: #ebebeb;
 --color-bg-dark: #1d1d1d;
---color-bg-dark-text: #d8d7d7;
+--color-bg-dark-text: #f7f7f7;
+}
 
 .dark-theme{
---color-title: #F1F3F2;
---color-text: #C7D1CC;
---color-bg-1: #171d1a;
---color-bg-2: #101412;
---color-bg-dark: #d8d8d8;
---color-bg-dark-text: #1d1d1d;
+    --color-text-1: #f1f1f1;
+    --color-text-2: #ebebeb;
+    --color-bg-1: #202020;
+    --color-bg-2: #2e2d2d;
+    --color-bg-dark: #f7f7f7;
+    --color-bg-dark-text: #1d1d1d;
+    /* below colors, are the same in light theme */
+    --color-brand-alt: lightblue;
+--color-brand: #adbeb0;
+--color-brand-dark: #92a094;
+--color-white: #fff;
+--color-black: #000;
+--color-gray: gray;
+--color-gray-light: lightgray;
 }
 
 /* ----- Font Weight ----- */
@@ -118,14 +129,14 @@ ul {
 }
 
 /* REF: A001. ----- Dark Theme ----- */
-body.dark-theme{
+/* body.dark-theme{
     --color-title: #F1F3F2;
 --color-text: #C7D1CC;
 --color-bg-1: #171d1a;
 --color-bg-2: #101412;
 --color-bg-dark: #d8d8d8;
 --color-bg-dark-text: #1d1d1d;
-}
+} */
 
 `;
 

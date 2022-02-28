@@ -10,15 +10,14 @@ const ScHamburger1 = styled.div`
     align-content: center;
     justify-content: space-between;
     position: fixed;
-    top: 2rem;
-    right: 1rem;
-    z-index: 11;
+    top: 1.5rem;
+    right: 1.2rem;
+    z-index: 13;
 
     .line1 {
         width: 100%;
         height: 1.5px;
-        background: var(--color-title);
-        /* background: black; */
+        background: var(--color-black);
         transition: all 1s ease;
         transform-origin: left;
         &.active {
@@ -29,8 +28,7 @@ const ScHamburger1 = styled.div`
     .line2 {
         width: 100%;
         height: 1.5px;
-        background-color: var(--color-title);
-        /* background: black; */
+        background-color: var(--color-black);
         transition: all 1s ease;
 
         &.active {
@@ -41,8 +39,7 @@ const ScHamburger1 = styled.div`
     .line3 {
         width: 100%;
         height: 1.5px;
-        background-color: var(--color-title);
-        /* background: black; */
+        background-color: var(--color-black);
         transition: all 1s ease;
         transform-origin: left;
 
