@@ -70,7 +70,8 @@ ul {
 --color-gray-light: lightgray;
 /*  the colors below have a dark themed version: refer to: REF: A001 (line +- 55  ) */
 --color-text-1: #202020;
---color-text-2: #2e2d2d;
+/* --color-text-2: #2e2d2d; */
+--color-text-2: #414141;
 --color-bg-1: #f1f1f1;
 --color-bg-2: #ebebeb;
 --color-bg-dark: #1d1d1d;

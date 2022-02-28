@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import Gallery from "./components/gallery/Gallery";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
 import { GlobalStyles } from "./globalStyle/GlobalStyles";
@@ -30,8 +31,8 @@ const App = () => {
                     setToggleMenu={setToggleMenu}
                 />
                 <Navbar toggleMenu={toggleMenu} />
-
                 <Hero />
+                <Gallery />
             </ScApp>
         </>
     );

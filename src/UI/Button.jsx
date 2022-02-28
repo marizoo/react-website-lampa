@@ -14,8 +14,8 @@ const ScButton = styled.div`
     transition: all 0.3s ease;
 
     &:hover {
-        background: var(--color-brand);
-        color: var(--color-white);
+        background: var(--color-brand-alt);
+        color: var(--color-text-1);
     }
 
     ${(props) =>

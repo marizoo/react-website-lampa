@@ -21,7 +21,7 @@ const Hero = () => {
                         </h3>
                     </div>
                     <div className="hero__button">
-                        <Button outline>View More</Button>
+                        <Button>View More</Button>
                     </div>
                 </div>
             </Section>

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ScNavbar = styled.div`
     width: 100%;
     cursor: pointer;
+    position: relative;
 
     .navbar__container {
         width: 100%;
@@ -10,7 +11,7 @@ export const ScNavbar = styled.div`
         display: flex;
         align-items: center;
         justify-content: space-between;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         font-family: var(--font-family-narrow);
@@ -22,6 +23,9 @@ export const ScNavbar = styled.div`
 
     .navbar__logo {
         display: flex;
+        position: fixed;
+        top: 0;
+        left: 10%;
     }
 
     .navbar__logo-img:hover {
@@ -37,18 +41,17 @@ export const ScNavbar = styled.div`
         align-items: flex-end;
         font-size: var(--fz-largest);
         padding-left: 0.85rem;
-        position: fixed;
-        top: 0;
-        left: 10%;
+
         transition: 0.3s ease;
     }
 
     .navbar__logo-text {
-        margin-left: 5.8rem;
-        margin-bottom: 2rem;
+        margin-left: rem;
         color: var(--color-black);
         text-transform: uppercase;
         letter-spacing: 1px;
+        margin-left: 1rem;
+        margin-top: 1.5rem;
     }
     .navbar__logo-text1 {
     }
@@ -84,12 +87,12 @@ export const ScNavbar = styled.div`
 
     .navbar__links-li {
         font-weight: var(--fw-medium);
-        transition: 0.3s ease;
         letter-spacing: 0.1rem;
         text-transform: uppercase;
+        transition: 0.3s ease;
 
         &:hover {
-            color: var(--color-black);
+            color: var(--color-brand);
         }
     }
 `;
