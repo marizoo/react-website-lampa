@@ -3,16 +3,17 @@ import styled from "styled-components";
 export const ScNavbar = styled.div`
     width: 100%;
     height: 6rem;
-    background: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: absolute;
     top: 0;
     left: 0;
-    color: var(--color-text);
     font-family: var(--font-family-narrow);
+    /* background: transparent; */
     cursor: pointer;
+    background: var(--color-bg-1);
+    color: var(--color-text);
 
     .navbar__logo {
         display: flex;
@@ -37,11 +38,13 @@ export const ScNavbar = styled.div`
         position: fixed;
         top: 0;
         left: 10%;
+        transition: 0.3s ease;
     }
 
     .navbar__logo-text {
         margin-left: 5.8rem;
         margin-bottom: 2rem;
+        color: var(--color-text);
     }
     .navbar__logo-text1 {
     }
@@ -49,9 +52,30 @@ export const ScNavbar = styled.div`
     }
 
     .navbar__links {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--color-bg-1);
+        color: var(--color-text);
+        padding-top: 50%;
+        line-height: 400%;
+        z-index: 10;
     }
     .navbar__links-ul {
+        text-align: center;
     }
+
     .navbar__links-li {
+        transition: 0.3s ease;
+        letter-spacing: 0.1rem;
+
+        &:hover {
+            color: var(--color-brand);
+        }
     }
 `;

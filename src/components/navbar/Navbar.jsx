@@ -1,5 +1,4 @@
 import React from "react";
-import Section from "../../UI/Section";
 import { ScNavbar } from "./navbar.styled";
 
 const Navbar = () => {
