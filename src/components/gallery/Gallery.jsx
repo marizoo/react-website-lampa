@@ -1,7 +1,8 @@
 import React from "react";
 import Section from "../../UI/Section";
 import SectionTitle from "../../UI/SectionTitle";
-import { ScGallery } from "./gallery.styled";
+import "./gallery.styled.js";
+import { ScGallery } from "./gallery.styled.js";
 
 const Gallery = () => {
     return (
@@ -10,44 +11,73 @@ const Gallery = () => {
                 <div className="gallery__container">
                     <div className="gallery__datas">
                         <SectionTitle>Gallery</SectionTitle>
-                        <div className="gallery__data-card-container">
-                            {/* BOX 1 */}
-                            <div className="gallery__data-card">
-                                <div className="gallery__data-card-title">
-                                    Environmental Friendly Material
+                        <div className="gallery__card-container">
+                            {/* gallery card 1*/}
+                            <div className="gallery__card">
+                                <div className="gallery__card-title">
+                                    Kopi 'o teh tarek manis
                                 </div>
-                                <div className="gallery__data-card-paragraph">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Accusamus inventore
-                                    molestias labore illum fuga corporis.
-                                </div>
-                            </div>
-                            {/* BOX 2 */}
-                            <div className="gallery__data-card">
-                                <div className="gallery__data-card-title">
-                                    Designed with Lots of Love
-                                </div>
-                                <div className="gallery__data-card-paragraph">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Accusamus inventore
-                                    molestias labore illum fuga corporis.
+                                <div className="gallery__card-desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Quod dolorum quaerat ex
+                                    quos, distinctio molestias necessitatibus
+                                    blanditiis.
                                 </div>
                             </div>
-                            {/* BOX 3 */}
-                            <div className="gallery__data-card">
-                                <div className="gallery__data-card-title">
-                                    Sustainable for your needs
+                            {/* gallery card 2*/}
+                            <div className="gallery__card">
+                                <div className="gallery__card-title">
+                                    Kopi 'o teh tarek manis
                                 </div>
-                                <div className="gallery__data-card-paragraph">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Accusamus inventore
-                                    molestias labore illum fuga corporis.
+                                <div className="gallery__card-desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Quod dolorum quaerat ex
+                                    quos, distinctio molestias necessitatibus
+                                    blanditiis.
                                 </div>
                             </div>
-                            {/* Box ends */}
+                            {/* gallery card 3*/}
+                            <div className="gallery__card">
+                                <div className="gallery__card-title">
+                                    Kopi 'o teh tarek manis
+                                </div>
+                                <div className="gallery__card-desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Quod dolorum quaerat ex
+                                    quos, distinctio molestias necessitatibus
+                                    blanditiis.
+                                </div>
+                            </div>
+                            {/* gallery card end*/}
                         </div>
                     </div>
-                    <div className="gallery__images-container"></div>
+
+                    <div className="gallery__images">
+                        <div className="gallery__images-container">
+                            {/* images card 1 */}
+                            <div className="gallery__images-card">
+                                <div className="gallery__images-card-img"></div>
+                                <div className="gallery__images-card-title">
+                                    Ceiling Lamp
+                                </div>
+                            </div>
+                            {/* images card 2 */}
+                            <div className="gallery__images-card">
+                                <div className="gallery__images-card-img"></div>
+                                <div className="gallery__images-card-title">
+                                    Floor Lamp
+                                </div>
+                            </div>
+                            {/* images card 3 */}
+                            <div className="gallery__images-card">
+                                <div className="gallery__images-card-img"></div>
+                                <div className="gallery__images-card-title">
+                                    Wall Lamp
+                                </div>
+                            </div>
+                            {/* images card end */}
+                        </div>
+                    </div>
                 </div>
             </Section>
         </ScGallery>

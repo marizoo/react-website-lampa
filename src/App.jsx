@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Gallery from "./components/gallery/Gallery";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
+import Price from "./components/price/Price";
+import Reviews from "./components/reviews/Reviews";
 import { GlobalStyles } from "./globalStyle/GlobalStyles";
 import Hamburger1 from "./UI/Hamburger1";
 import ToggleTheme from "./UI/ToggleTheme";
@@ -33,6 +35,8 @@ const App = () => {
                 <Navbar toggleMenu={toggleMenu} />
                 <Hero />
                 <Gallery />
+                <Price />
+                <Reviews />
             </ScApp>
         </>
     );

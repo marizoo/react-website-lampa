@@ -52,6 +52,8 @@ export const ScNavbar = styled.div`
         letter-spacing: 1px;
         margin-left: 1rem;
         margin-top: 1.5rem;
+        font-family: var(--font-family-alt);
+        font-weight: ;
     }
     .navbar__logo-text1 {
     }
@@ -74,6 +76,7 @@ export const ScNavbar = styled.div`
         padding-top: 50%;
         line-height: 400%;
         transition: 0.4s ease;
+        font-family: var(--font-family-alt);
         z-index: 10;
     }
 

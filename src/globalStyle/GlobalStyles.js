@@ -5,7 +5,8 @@ export const GlobalStyles = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 /* font-family: 'Archivo Narrow', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600;700&display=swap');
-
+/* font-family: 'Playfair Display', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 *,
 *::before,
@@ -70,11 +71,11 @@ ul {
 --color-gray-light: lightgray;
 /*  the colors below have a dark themed version: refer to: REF: A001 (line +- 55  ) */
 --color-text-1: #202020;
-/* --color-text-2: #2e2d2d; */
 --color-text-2: #414141;
 --color-bg-1: #f1f1f1;
 --color-bg-2: #ebebeb;
 --color-bg-dark: #1d1d1d;
+--color-bg-dark-1: #303030;
 --color-bg-dark-text: #f7f7f7;
 }
 
@@ -84,6 +85,7 @@ ul {
     --color-bg-1: #202020;
     --color-bg-2: #2e2d2d;
     --color-bg-dark: #f7f7f7;
+    --color-bg-dark-1: #e0dfdf;
     --color-bg-dark-text: #1d1d1d;
     /* below colors, are the same in light theme */
     --color-brand-alt: lightblue;
@@ -107,7 +109,8 @@ ul {
 
 /* --- Typography ----- */
 --font-family: 'Poppins', sans-serif;
---font-family-narrow:'Archivo Narrow', sans-serif;
+--font-family-narrow: 'Archivo Narrow', sans-serif;
+--font-family-alt: 'Playfair Display', serif;
 
 /* --------  Font Size  -------*/
 --fz-largest: 2.25rem;
@@ -129,15 +132,6 @@ ul {
 }
 }
 
-/* REF: A001. ----- Dark Theme ----- */
-/* body.dark-theme{
-    --color-title: #F1F3F2;
---color-text: #C7D1CC;
---color-bg-1: #171d1a;
---color-bg-2: #101412;
---color-bg-dark: #d8d8d8;
---color-bg-dark-text: #1d1d1d;
-} */
 
 `;
 
@@ -189,3 +183,15 @@ export const laptopMd = (props) => {
         }
     `;
 };
+
+// How to use media queries
+/* /420 */
+// ${mobile({})}
+/* 576 */
+// ${mobileMd({})}
+/* 768 */
+// ${tablet({})}
+/* 992 */
+// ${tabletMd({})}
+/* 1200 */
+// ${laptop({})}

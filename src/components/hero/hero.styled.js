@@ -6,12 +6,12 @@ export const ScHero = styled.div`
     max-width: 1200px;
     display; flex;
     align-items: center;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     color: var(--color-text-1);
+    background: lightgray;
 
     &::before{
     content: "";
@@ -27,14 +27,23 @@ export const ScHero = styled.div`
     .hero__datas{
         width: 100%;
         height: 100%;
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
     }
 
     .hero__titles{
         color: var(--color-text-1);
     }
-    .hero__titles-1{}
-    .hero__titles-2{}
+    .hero__titles-1{
+        font-family: var(--font-family-alt);
+
+    }
+
+    .hero__titles-2{
+        font-family: var(--font-family-alt);
+
+    }
 
     .hero__subtitles{
         margin-top: 2rem;
