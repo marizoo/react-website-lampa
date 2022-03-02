@@ -1,10 +1,16 @@
 import styled from "styled-components";
+import {
+    laptop,
+    mobileMd,
+    tablet,
+    tabletMd,
+} from "../../globalStyle/GlobalStyles";
 
 export const ScNavbar = styled.div`
-    width: 100%;
+    width: 100vw;
+    max-width: 1200px;
     cursor: pointer;
     position: relative;
-    max-width: 1200px;
 
     .navbar__container {
         width: 100%;
@@ -42,7 +48,7 @@ export const ScNavbar = styled.div`
         align-items: flex-end;
         font-size: var(--fz-largest);
         padding-left: 0.85rem;
-
+        font-size: 3rem;
         transition: 0.3s ease;
     }
 
@@ -52,9 +58,9 @@ export const ScNavbar = styled.div`
         text-transform: uppercase;
         letter-spacing: 1px;
         margin-left: 1rem;
-        margin-top: 1.5rem;
+        margin-top: 2rem;
         font-family: var(--font-family-alt);
-        font-weight: ;
+        font-size: 1.5rem;
     }
     .navbar__logo-text1 {
     }
@@ -63,7 +69,8 @@ export const ScNavbar = styled.div`
 
     /* THE SHOW-MENU ON MOBILE */
     .navbar__links {
-        width: 100vw;
+        width: 100%;
+        max-width: 1200px;
         height: 100vh;
         position: fixed;
         top: 0;
@@ -79,6 +86,21 @@ export const ScNavbar = styled.div`
         transition: 0.4s ease;
         font-family: var(--font-family-alt);
         z-index: 10;
+        /* 576 */
+        ${mobileMd({ paddingTop: "40%", lineHeight: "450%" })};
+        /* 768 */
+        ${tablet({ paddingTop: "30%", lineHeight: "500%" })};
+        /* 992 */
+        ${tabletMd({
+            flexDirection: "row",
+            height: "6rem",
+            left: "0",
+            background: "transparent",
+            color: "var(--color-black)",
+            paddingTop: "0",
+            zIndex: "12",
+            justifyContent: "end",
+        })}
     }
 
     .navbar__active {
@@ -87,6 +109,10 @@ export const ScNavbar = styled.div`
 
     .navbar__links-ul {
         text-align: center;
+        /* 992 */
+        ${tabletMd({ display: "flex", marginRight: "6rem" })}
+        /* 1200 */
+        ${laptop({ marginRight: "8rem" })}
     }
 
     .navbar__links-li {
@@ -94,9 +120,27 @@ export const ScNavbar = styled.div`
         letter-spacing: 0.1rem;
         text-transform: uppercase;
         transition: 0.3s ease;
+        /* 992 */
+        ${tabletMd({ marginRight: "2rem" })}
+        /* 1200 */
+        ${laptop({ marginRight: "4rem" })}
 
         &:hover {
             color: var(--color-brand);
         }
     }
 `;
+
+// How to use media queries
+/* /420 */
+// ${mobile({})}
+/* 576 */
+// ${mobileMd({})}
+/* 768 */
+// ${tablet({})}
+/* 992 */
+// ${tabletMd({})}
+/* 1050 */
+// ${tabletLg({})}
+/* 1200 */
+// ${laptop({})}

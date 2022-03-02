@@ -8,8 +8,7 @@ const Navbar = ({ toggleMenu }) => {
                 <div className="navbar__logo">
                     <div className="navbar__logo-img">L</div>
                     <div className="navbar__logo-text">
-                        <p className="navbar__logo-text1">Lampy</p>
-                        <p className="navbar__logo-text2">Lampsss</p>
+                        <p className="navbar__logo-text1">Lampa</p>
                     </div>
                 </div>
             </div>

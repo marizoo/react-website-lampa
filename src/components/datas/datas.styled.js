@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mobileMd, tablet } from "../../globalStyle/GlobalStyles";
+import { tablet, tabletLg, tabletMd } from "../../globalStyle/GlobalStyles";
 
 export const ScDatas = styled.div`
     width: 100vw;
@@ -22,8 +22,10 @@ export const ScDatas = styled.div`
         text-align: center;
         padding: 1rem;
         margin-top: 1rem;
-        /* 576 */
-        ${mobileMd({ flexDirection: "row" })}
+        /* 768 */
+        ${tablet({ flexDirection: "row", gap: "2rem" })}
+        /* 1050 */
+        ${tabletLg({ marginTop: "2rem" })}
     }
 
     .datas__milestone-container-1 {
@@ -41,14 +43,32 @@ export const ScDatas = styled.div`
     .milestone__card-1 {
         width: 100%;
         height: 150px;
+        /* 768 */
+        ${tablet({
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+        })}
     }
     .milestone__card-2 {
         width: 100%;
         height: 150px;
+        /* 768 */
+        ${tablet({
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+        })}
     }
     .milestone__card-3 {
         width: 100%;
         height: 150px;
+        /* 768 */
+        ${tablet({
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+        })}
     }
 
     .milestone__card-number {
@@ -56,14 +76,16 @@ export const ScDatas = styled.div`
         font-weight: var(--fw-bolder);
         font-size: 3rem;
         letter-spacing: -5px;
-        /* 768 */
-        ${tablet({ fontSize: "4rem" })}
+        /* 992 */
+        ${tabletMd({ fontSize: "3.5rem" })}
+        /* 1050 */
+        ${tabletLg({ fontSize: "4rem" })}
     }
     .milestone__card-title {
         font-family: var(--font-family-alt);
         letter-spacing: 1px;
         /* 768 */
-        ${tablet({ letterSpacing: "1.5px" })}
+        ${tablet({ letterSpacing: "1px" })}
     }
 
     .datas__milestone-desc {
@@ -72,6 +94,8 @@ export const ScDatas = styled.div`
         flex: 1;
         height: 300px;
         line-height: 150%;
+        /* 768 */
+        ${tablet({ lineHeight: "120%" })}
     }
     .datas__milestone-desc-p:nth-child(1) {
         margin-bottom: 2.5rem;

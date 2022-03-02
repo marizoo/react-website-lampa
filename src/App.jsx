@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Datas from "./components/datas/Datas";
+import Footer from "./components/footer/Footer";
 import Gallery from "./components/gallery/Gallery";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
@@ -39,6 +40,7 @@ const App = () => {
                 <Price />
                 <Reviews />
                 <Datas />
+                <Footer />
             </ScApp>
         </>
     );

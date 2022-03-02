@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { tabletMd } from "../globalStyle/GlobalStyles";
 
 const ScHamburger1 = styled.div`
     cursor: pointer;
@@ -13,6 +14,8 @@ const ScHamburger1 = styled.div`
     top: 1.5rem;
     right: 1.2rem;
     z-index: 13;
+    /* 992 */
+    ${tabletMd({ display: "none" })}
 
     .line1 {
         width: 100%;

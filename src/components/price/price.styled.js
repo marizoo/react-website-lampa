@@ -23,7 +23,11 @@ export const ScPrice = styled.div`
         flex-wrap: wrap;
 
         /* media 768 */
-        ${tablet({ flexDirection: "row", gap: "2rem" })};
+        ${tablet({
+            flexDirection: "row",
+            columnGap: "4.5rem",
+            marginTop: "2rem",
+        })};
 
         /* media 1050 */
         ${tabletLg({ alignItems: "baseline" })};
@@ -33,7 +37,7 @@ export const ScPrice = styled.div`
         margin-top: 1rem;
         border-bottom: 1px solid var(--color-text-1);
         border-top: 1px solid var(--color-text-1);
-        margin-bottom: 2.5rem;
+        margin-bottom: 3rem;
         background: var(--color-bg-2);
         width: 280px;
     }

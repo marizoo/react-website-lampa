@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { RiSunLine, RiMoonLine } from "react-icons/ri";
-import { laptop, tablet } from "../globalStyle/GlobalStyles";
+import { laptop, tablet, tabletMd } from "../globalStyle/GlobalStyles";
 
 const ScToggleTheme = styled.div`
     cursor: pointer;
@@ -14,6 +14,10 @@ const ScToggleTheme = styled.div`
     ${tablet({ fontSize: "18px" })};
     color: var(--color-gray);
     z-index: 13;
+    /* 992 */
+    ${tabletMd({ top: "2.2rem" })}
+    /* 1200 */
+    ${laptop({ right: "2.5rem" })}
 `;
 
 const ToggleTheme = ({ onToggleTheme, mainCss }) => {

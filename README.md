@@ -1,6 +1,6 @@
 ## DESCRIPTION:
-- A BUsiness website made with React + styled component for a "mock" Lamp Company.
-- [Youtube Video of the App](https://youtu.be/J_h2WUWCQFc)
+- A Business website made with React + styled component for a Lamp Company.
+- [Youtube Video of the App](https://youuuuuuuuuu)
 
 ## OUTCOME:
 - Built mobile first, it is responsive with light/dark theme.
@@ -9,12 +9,12 @@
 ## TECH STACKS:
 - React,
 - Icons: React-icons,
-- Hooks: useState, useEffect,
+- Hooks: useState.
 - styling: Styled Components (with css animations)
 
 ## PROGRESS:
-- Done: 1%;
-- Mobile Responsive? not yet.
+- Done: 100%;
+- Mobile Responsive? YES.
 
 ## How to run
 `yarn install`

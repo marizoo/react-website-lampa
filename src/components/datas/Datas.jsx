@@ -34,7 +34,7 @@ const Datas = () => {
                                     467
                                 </span>
                                 <p className="milestone__card-title">
-                                    Lorem ipsum dolor sit
+                                    Lorem ipsumlor
                                 </p>
                             </div>
                         </div>
