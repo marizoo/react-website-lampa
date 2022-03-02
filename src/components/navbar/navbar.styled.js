@@ -81,15 +81,15 @@ export const ScNavbar = styled.div`
         align-items: center;
         background: var(--color-bg-dark);
         color: var(--color-bg-dark-text);
-        padding-top: 50%;
+        padding-top: 40%;
         line-height: 400%;
         transition: 0.4s ease;
         font-family: var(--font-family-alt);
         z-index: 10;
         /* 576 */
-        ${mobileMd({ paddingTop: "40%", lineHeight: "450%" })};
+        ${mobileMd({ paddingTop: "30%", lineHeight: "450%" })};
         /* 768 */
-        ${tablet({ paddingTop: "30%", lineHeight: "500%" })};
+        ${tablet({ paddingTop: "20%", lineHeight: "500%" })};
         /* 992 */
         ${tabletMd({
             flexDirection: "row",

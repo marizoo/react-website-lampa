@@ -6,7 +6,9 @@ const Navbar = ({ toggleMenu }) => {
         <ScNavbar>
             <div className="navbar__container">
                 <div className="navbar__logo">
-                    <div className="navbar__logo-img">L</div>
+                    <div className="navbar__logo-img">
+                        <a href="#home">L</a>
+                    </div>
                     <div className="navbar__logo-text">
                         <p className="navbar__logo-text1">Lampa</p>
                     </div>
@@ -20,10 +22,21 @@ const Navbar = ({ toggleMenu }) => {
                 }
             >
                 <ul className="navbar__links-ul">
-                    <li className="navbar__links-li">About</li>
-                    <li className="navbar__links-li">Gallery</li>
-                    <li className="navbar__links-li">Stories</li>
-                    <li className="navbar__links-li">Home</li>
+                    <li className="navbar__links-li">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li className="navbar__links-li">
+                        <a href="#gallery">Gallery</a>
+                    </li>
+                    <li className="navbar__links-li">
+                        <a href="#price">Price</a>
+                    </li>
+                    <li className="navbar__links-li">
+                        <a href="#stories">Stories</a>
+                    </li>
+                    <li className="navbar__links-li">
+                        <a href="#milestones">Milestones</a>
+                    </li>
                 </ul>
             </div>
         </ScNavbar>

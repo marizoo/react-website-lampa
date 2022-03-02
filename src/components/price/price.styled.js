@@ -21,6 +21,7 @@ export const ScPrice = styled.div`
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        margin-top: 2rem;
 
         /* media 768 */
         ${tablet({

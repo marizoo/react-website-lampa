@@ -6,7 +6,7 @@ import { ScPrice } from "./price.styled";
 
 const Price = () => {
     return (
-        <ScPrice>
+        <ScPrice id="price">
             <Section>
                 <div className="price__container">
                     <SectionTitle>Price</SectionTitle>

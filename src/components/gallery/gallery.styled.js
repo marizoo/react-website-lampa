@@ -33,6 +33,7 @@ export const ScGallery = styled.div`
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        margin-top: 3rem;
 
         /* media 576 */
         ${mobileMd({ gap: "2rem" })};
@@ -90,12 +91,12 @@ export const ScGallery = styled.div`
     }
 
     .gallery__images-card-img {
-        background: lightblue;
         width: 100%;
         height: 100%;
         position: absolute;
         top: 0;
         left: 0;
+        object-fit: cover;
     }
 
     .gallery__images-card-title {

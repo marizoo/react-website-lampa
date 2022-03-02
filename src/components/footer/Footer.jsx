@@ -10,7 +10,9 @@ const Footer = () => {
                 <div className="footer__container">
                     {/* logo */}
                     <div className="navbar__logo">
-                        <div className="navbar__logo-img">L</div>
+                        <div className="navbar__logo-img">
+                            <a href="#home">L</a>
+                        </div>
                         <div className="navbar__logo-text">
                             <p className="navbar__logo-text1">Lampa</p>
                         </div>

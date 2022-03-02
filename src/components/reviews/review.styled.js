@@ -43,6 +43,8 @@ export const ScReviews = styled.div`
         margin: 2rem 0;
         padding: 1rem;
         background: var(--color-bg-dark-1);
+        /* 768 */
+        ${tablet({ margin: "2rem 0 0" })}
     }
 
     .reviews__card-desc {

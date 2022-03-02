@@ -5,7 +5,7 @@ import { ScDatas } from "./datas.styled";
 
 const Datas = () => {
     return (
-        <ScDatas>
+        <ScDatas id="milestones">
             <Section>
                 <div className="datas__container">
                     <SectionTitle>Our Datas</SectionTitle>

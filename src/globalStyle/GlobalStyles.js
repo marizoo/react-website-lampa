@@ -134,7 +134,6 @@ ul {
 }
 }
 
-
 `;
 
 // Create media queries

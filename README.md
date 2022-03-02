@@ -1,10 +1,10 @@
 ## DESCRIPTION:
 - A Business website made with React + styled component for a Lamp Company.
-- [Youtube Video of the App](https://youuuuuuuuuu)
+- [Youtube Video of the App](https://youtu.be/jYM-pCVFeM8)
 
 ## OUTCOME:
 - Built mobile first, it is responsive with light/dark theme.
-- link to the UI's video on youtube: https://youuuuuuuuuuuuuuuuuuuuuuu
+- link to the UI's video on youtube: https://youtu.be/jYM-pCVFeM8
 
 ## TECH STACKS:
 - React,
@@ -27,3 +27,8 @@
 
 ## IMAGE:
 ![Screenshot of the App](./screenshots/50000000000000000000000000000000000)
+
+## TODO:
+- Click mobile menu = close menu.
+- screenshots
+- pinterest

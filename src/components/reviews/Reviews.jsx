@@ -5,7 +5,7 @@ import { ScReviews } from "./review.styled";
 
 const Reviews = () => {
     return (
-        <ScReviews>
+        <ScReviews id="stories">
             <Section>
                 <div className="reviews__container">
                     <SectionTitle>Our Customers</SectionTitle>

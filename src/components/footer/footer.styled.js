@@ -27,7 +27,7 @@ export const ScFooter = styled.div`
         position: absolute;
         top: 0;
         left: 10%;
-        z-index: 12;
+        z-index: 9;
     }
 
     .navbar__logo-img:hover {
