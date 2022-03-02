@@ -20,6 +20,14 @@ background: linear-gradient(270deg, rgb(120, 148, 131) 0%, rgb(118, 158, 134) 55
 --color-bg-dark-1: #303030;
 --color-bg-dark-text: #f7f7f7;
 }
+
+.try{
+    --color-bg-dark-2: #111111;
+    --color-bg-dark-2: #7e7e7e;
+    --color-bg-dark-text-1: #f7f7f7;
+    --color-bg-dark-text-1: #1f1f1f;
+}
+
 .dark{
 --color-text-1: #f1f1f1;
 --color-text-2: #ebebeb;
@@ -28,6 +36,8 @@ background: linear-gradient(270deg, rgb(120, 148, 131) 0%, rgb(118, 158, 134) 55
 --color-bg-dark: #f7f7f7;
 --color-bg-dark-1: #e0dfdf;
 --color-bg-dark-text: #1d1d1d;
+
+
     }
 
 

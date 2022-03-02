@@ -4,6 +4,7 @@ export const ScNavbar = styled.div`
     width: 100%;
     cursor: pointer;
     position: relative;
+    max-width: 1200px;
 
     .navbar__container {
         width: 100%;

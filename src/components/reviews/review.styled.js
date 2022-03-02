@@ -1,12 +1,18 @@
 import styled from "styled-components";
+import { tablet, tabletLg } from "../../globalStyle/GlobalStyles";
 
 export const ScReviews = styled.div`
-    background: var(--color-bg-dark);
+    width: 100vw;
+    height: 100%;
+    max-width: 1200px;
+    background: var(--color-bg-dark-2);
     color: var(--color-bg-dark-text);
 
     /* <section> */
 
     .reviews__container {
+        width: 100%;
+        height: 100%;
     }
 
     .reviews__title {
@@ -16,11 +22,24 @@ export const ScReviews = styled.div`
     }
 
     .reviews__card-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* media 768 */
+        ${tablet({ flexDirection: "row", gap: "3rem" })};
+
+        /* media 1050 */
+        ${tabletLg({ alignItems: "baseline", rowGap: "0" })};
     }
 
     /* reviews card */
     .reviews__card-card {
         width: 280px;
+        height: 210px;
         margin: 2rem 0;
         padding: 1rem;
         background: var(--color-bg-dark-1);

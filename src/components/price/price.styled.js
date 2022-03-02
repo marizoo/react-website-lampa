@@ -1,30 +1,43 @@
 import styled from "styled-components";
+import { tablet, tabletLg } from "../../globalStyle/GlobalStyles";
 
 export const ScPrice = styled.div`
-    background: var(--color-bg-1);
+    width: 100vw;
+    height: 100%;
     color: var(--color-text-1);
+    background: var(--color-bg-2);
+    max-width: 1200px;
 
     .price__container {
-    }
-
-     {
+        width: 100%;
+        height: 100%;
     }
 
     .price__card-container {
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        /* media 768 */
+        ${tablet({ flexDirection: "row", gap: "2rem" })};
+
+        /* media 1050 */
+        ${tabletLg({ alignItems: "baseline" })};
     }
 
     .price__card {
-        border-top: 1px solid var(--color-text-1);
+        margin-top: 1rem;
         border-bottom: 1px solid var(--color-text-1);
+        border-top: 1px solid var(--color-text-1);
         margin-bottom: 2.5rem;
         background: var(--color-bg-2);
         width: 280px;
     }
 
-    /* 00.1.A.0.a */
     .price__card-title {
         font-size: 1.7rem;
         margin: 0.75rem 0 2rem;
@@ -33,22 +46,18 @@ export const ScPrice = styled.div`
         font-family: var(--font-family-alt);
     }
 
-    /* 00.1.A.0.b */
     .price__card-desc {
         padding: 0 1rem;
     }
 
-    /* 00.1.A.0.b.1 */
     .price__card-desc-ul {
         list-style: square;
     }
 
-    /* 00.1.A.0.b.1.1 */
     .price__card-desc-li {
         margin-bottom: 0.7rem;
     }
 
-    /* 00.1.A.0.c */
     .price__card-price {
         display: flex;
         align-items: center;
@@ -56,7 +65,6 @@ export const ScPrice = styled.div`
         margin: 1rem 0;
     }
 
-    /* 00.1.A.0.c.1 */
     .price__card-number {
         font-size: 1.4rem;
         font-weight: var(--fw-bolder);
@@ -77,5 +85,7 @@ export const ScPrice = styled.div`
 /* ${tablet({})} */
 /* media 992 */
 /* ${tabletMd({})} */
+/* media 1050px */
+/* ${tabletLg({})} */
 /* media 1200 */
 /* ${laptop({})} */

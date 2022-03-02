@@ -1,5 +1,6 @@
 import React from "react";
 import Section from "../../UI/Section";
+import SectionTitle from "../../UI/SectionTitle";
 import { ScReviews } from "./review.styled";
 
 const Reviews = () => {
@@ -7,7 +8,7 @@ const Reviews = () => {
         <ScReviews>
             <Section>
                 <div className="reviews__container">
-                    <div className="reviews__title">Our Customers</div>
+                    <SectionTitle>Our Customers</SectionTitle>
                     <div className="reviews__card-container">
                         {/* Reviews Card 1 */}
                         <div className="reviews__card-card">
@@ -44,19 +45,7 @@ const Reviews = () => {
                             </div>
                             <div className="reviews__card-name">Nicole Bus</div>
                         </div>
-                        {/* Reviews Card 4 */}
-                        <div className="reviews__card-card">
-                            <div className="reviews__card-desc">
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Libero maiores molestiae
-                                provident dolore ratione, adipisci deleniti, rem
-                                voluptas, corporis cupiditate illum provident
-                                earum veniam!
-                            </div>
-                            <div className="reviews__card-name">
-                                Taylor Swift
-                            </div>
-                        </div>
+
                         {/* Reviews Card end */}
                     </div>
                 </div>

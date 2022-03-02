@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import Datas from "./components/datas/Datas";
 import Gallery from "./components/gallery/Gallery";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
@@ -37,6 +38,7 @@ const App = () => {
                 <Gallery />
                 <Price />
                 <Reviews />
+                <Datas />
             </ScApp>
         </>
     );

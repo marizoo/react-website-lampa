@@ -77,9 +77,11 @@ ul {
 --color-bg-dark: #1d1d1d;
 --color-bg-dark-1: #303030;
 --color-bg-dark-text: #f7f7f7;
+--color-bg-dark-2: #111111;
 }
 
 .dark-theme{
+    --color-bg-dark-2: #868686;
     --color-text-1: #f1f1f1;
     --color-text-2: #ebebeb;
     --color-bg-1: #202020;
@@ -89,12 +91,12 @@ ul {
     --color-bg-dark-text: #1d1d1d;
     /* below colors, are the same in light theme */
     --color-brand-alt: lightblue;
---color-brand: #adbeb0;
---color-brand-dark: #92a094;
---color-white: #fff;
---color-black: #000;
---color-gray: gray;
---color-gray-light: lightgray;
+    --color-brand: #adbeb0;
+    --color-brand-dark: #92a094;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-gray: gray;
+    --color-gray-light: lightgray;
 }
 
 /* ----- Font Weight ----- */
@@ -168,6 +170,14 @@ export const tabletMd = (props) => {
     `;
 };
 
+export const tabletLg = (props) => {
+    return css`
+        @media (min-width: 1050px) {
+            ${props}
+        }
+    `;
+};
+
 export const laptop = (props) => {
     return css`
         @media (min-width: 1200px) {
@@ -193,5 +203,7 @@ export const laptopMd = (props) => {
 // ${tablet({})}
 /* 992 */
 // ${tabletMd({})}
+/* 1050 */
+// ${tabletLg({})}
 /* 1200 */
 // ${laptop({})}
