@@ -26,7 +26,7 @@
 
 
 ## IMAGE:
-![Screenshot of the App](./screenshots/50000000000000000000000000000000000)
+![Screenshot of the App](./screenshots/59-lampa-600-all.jpg)
 
 ## TODO:
 - Click mobile menu = close menu.
