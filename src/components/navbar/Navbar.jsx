@@ -1,7 +1,7 @@
 import React from "react";
 import { ScNavbar } from "./navbar.styled";
 
-const Navbar = ({ toggleMenu }) => {
+const Navbar = ({ toggleMenu, clickToClose }) => {
     return (
         <ScNavbar>
             <div className="navbar__container">
@@ -23,19 +23,29 @@ const Navbar = ({ toggleMenu }) => {
             >
                 <ul className="navbar__links-ul">
                     <li className="navbar__links-li">
-                        <a href="#home">Home</a>
+                        <a href="#home" onClick={clickToClose}>
+                            Home
+                        </a>
                     </li>
                     <li className="navbar__links-li">
-                        <a href="#gallery">Gallery</a>
+                        <a href="#gallery" onClick={clickToClose}>
+                            Gallery
+                        </a>
                     </li>
                     <li className="navbar__links-li">
-                        <a href="#price">Price</a>
+                        <a href="#price" onClick={clickToClose}>
+                            Price
+                        </a>
                     </li>
                     <li className="navbar__links-li">
-                        <a href="#stories">Stories</a>
+                        <a href="#stories" onClick={clickToClose}>
+                            Stories
+                        </a>
                     </li>
                     <li className="navbar__links-li">
-                        <a href="#milestones">Milestones</a>
+                        <a href="#milestones" onClick={clickToClose}>
+                            Milestones
+                        </a>
                     </li>
                 </ul>
             </div>

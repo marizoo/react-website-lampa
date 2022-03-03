@@ -25,6 +25,10 @@ const App = () => {
 
     const [toggleMenu, setToggleMenu] = useState(false);
 
+    const clickToClose = () => {
+        setToggleMenu(false);
+    };
+
     return (
         <>
             <GlobalStyles />
@@ -34,7 +38,7 @@ const App = () => {
                     toggleMenu={toggleMenu}
                     setToggleMenu={setToggleMenu}
                 />
-                <Navbar toggleMenu={toggleMenu} />
+                <Navbar toggleMenu={toggleMenu} clickToClose={clickToClose} />
                 <Hero />
                 <Gallery />
                 <Price />
